@@ -7,11 +7,11 @@ const Search = () => {
     const [cityname, setcityname] = useState(' ');
 
 
-    
+
 
     const clickhandler = () => {
         setcityname(city);
-        
+
     }
 
     const eventhandler = (e) => {
@@ -19,13 +19,13 @@ const Search = () => {
     }
 
 
-    
+
 
 
 
     return (
         <>
-            <input type="text" placeholder=" Enter location..." className="search-bar" onChange={eventhandler}   />
+            <input type="text" placeholder=" Enter location..." className="search-bar" onChange={eventhandler} />
             <button onClick={clickhandler} className="search" >search</button>
             <Location city={cityname} />
 
