@@ -24,7 +24,7 @@ const Temperature = (props) => {
 
     const weathercondition = weatherstatus ? (
 
-        <p><span style={{ color: 'whitesmoke', fontWeight: 'bold' }}>DESCRIPTION :</span> {weatherstatus[0].description}</p>
+        <p style={{textTransform:"capitalize"}}><span style={{ color: 'whitesmoke', fontWeight: 'bold' }}>DESCRIPTION :</span> {weatherstatus[0].description}</p>
     ) : (
             " "
         );
@@ -50,8 +50,8 @@ const Temperature = (props) => {
                             {weathercondition}
 
                             <br />
-                            <p><span style={{ color: 'whitesmoke', fontWeight: '900' }}>PRESSURE :</span> {weather.humidity}</p><br />
-                            <p><span style={{ color: 'whitesmoke', fontWeight: '900' }}>HUMIDITY :</span> {weather.pressure}</p><br />
+                            <p><span style={{ color: 'whitesmoke', fontWeight: '900' }}>PRESSURE :</span> {weather.humidity} %</p><br />
+                            <p><span style={{ color: 'whitesmoke', fontWeight: '900' }}>HUMIDITY :</span> {weather.pressure} hPa</p><br />
 
                         </div>
                     </>)
